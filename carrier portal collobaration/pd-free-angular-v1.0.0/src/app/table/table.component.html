@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+
+                <div>
+                        <div class="container">
+                                <div class="row">
+                                       <div id="custom-search-input">
+                                            <div class="input-group  col-md-6 col-md-offset-4 ">
+                                                <input type="text" class="  search-query form-control" placeholder="Enter City or ZIP Code" />
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-success" type="button">
+                                                        <span class=" glyphicon glyphicon-search"></span>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+
+
+                </div>
+                <div class="header">
+                    <h4 class="title"><span style="color:#5cb85c; font-size:20px"> <b>Available Loads</b></span></h4>
+                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th *ngFor="let cell of tableData1.headerRow">{{ cell }}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let row of tableData1.dataRows">
+                                <td *ngFor="let cell of row">{{cell}}</td>
+                                <td ><button class="btn btn-primary">Bid</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

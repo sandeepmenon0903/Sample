@@ -1,0 +1,141 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+
+                
+
+
+
+              
+                <div class="header">
+                    <h4 class="title"><span style="color:#5cb85c">My Loads</span></h4>
+                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th> Load ID</th><br/>
+                                <th> Pickup Location</th>
+                                <th> Destination</th>
+                                <th> Equipment</th>
+                                <th> Commodity</th>
+                                <th> Miles</th>
+                                <th> Load Status</th>
+                                <th> Find a partner</th>                    
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr  *ngFor="let table of tables">
+                                <td >{{table.Loadid }}</td><span></span>
+                                <td >{{table.pickuplocation+""+""}}</td>
+                                <td >{{table.destination}}</td>
+                                <td >{{table.equipmenttype}}</td>
+                                <td >{{table.commoditytype}}</td>
+                                <td >{{table.estimatedmiles}}</td>
+                                <td ><div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Trip Status
+                                    <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Trip Started</a></li>
+                                      <li><a href="#">Trip Completed</a></li>
+                                      <li><a href="#">Invoice send</a></li>
+                                    </ul>
+                                  </div></td>
+                                <td><button type="button" class="btn btn-success">Request partner</button></td>
+
+                              
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-12">
+            <div class="card">           
+
+                <div class="header">
+                    <h4 class="title"><span style="color:#5cb85c">Completed Loads</span></h4>
+                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th> Load ID</th><br/>
+                                <th> Pickup Location</th>
+                                <th> Destination</th>
+                                <th> Equipment </th>
+                                <th> Commodity </th>
+                                <th> Miles</th>                    
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr  *ngFor="let table of tables">
+                                <td >{{table.Loadid }}</td><span></span>
+                                <td >{{table.pickuplocation+""+""}}</td>
+                                <td >{{table.destination}}</td>
+                                <td >{{table.equipmenttype}}</td>
+                                <td >{{table.commoditytype}}</td>
+                                <td >{{table.estimatedmiles}}</td>
+                              
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-12">
+            <div class="card">           
+
+                <div class="header">
+                    <h4 class="title style"><span style="color:red; font-weight:30px">Rejected Loads</span></h4>
+                    <!-- <p class="category">Here is a subtitle for this table</p> -->
+                </div>
+                <div class="content table-responsive table-full-width">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th> Load ID</th><br/>
+                                <th> Pickup Location</th>
+                                <th> Destination</th>
+                                <th> Equipment </th>
+                                <th> Commodity</th>
+                                <th> Miles</th>                    
+
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr  *ngFor="let table of tables">
+                                <td >{{table.Loadid }}</td> <span></span>
+                                <td >{{table.pickuplocation+""+""}}</td>
+                                <td >{{table.destination}}</td>
+                                <td >{{table.equipmenttype}}</td>
+                                <td >{{table.commoditytype}}</td>
+                                <td >{{table.estimatedmiles}}</td>
+                              
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="card card-map">
+        <div class="header">
+            <h4 class="title">Location tracker</h4>
+        </div>
+        <ngui-map zoom="13" center="8.5241,76.9366" >
+         <marker [position]="[8.5241,76.9366]"></marker>
+           <map-circle
+               [center]="{lat: 8.5241, lng: 76.9366}">
+           </map-circle>
+       </ngui-map>
+    </div>
+</div>
